@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Koncert</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="css.css" />
+</head>
+<body>
+<br>
+<div id="header">
+<h1 align="center">Rejestracja na koncert / 3 wykonawców/<h1>
+</div>
+<div id="q1">
+<form name="koncert" action="mailto:koncert@lublin.pl" method="Post">
+<table align="right">
+<tr>
+	<td>Imię:</td> <td><input name="imie" type="text" id="imie" maxlength="20"></input></td>
+</tr>
+<tr>
+	<td>Nazwisko:</td> <td><input name="nazwisko" type="text" id="nazwisko" maxlength="20"></input></td>
+</tr>
+<tr>
+	<td>Wiek:</td> <td><input name="wiek" type="number" id="wiek" min="24" max="40" pattern="[0-100]"></input></td>
+</tr>
+<tr>
+	<td>e-mail:</td> <td><input type="email"></input></td>
+</tr>
+<tr>
+	<td>Tel:</td> <td><input name="tel" id="tel" type="number"></input></td>
+</tr>
+</table>
+
+</div>
+
+<div id="q2">
+
+<table>
+<tr>
+	<td><input name="w1" type="radio" id="w1">Wykonawca 1</td>
+</tr>
+<tr>
+	<td><input name="w2" type="radio" id="w2">Wykonawca 2</td>
+</tr>
+<tr>
+	<td><input name="w3" type="radio" id="w3">Wykonawca 3</td>
+</tr>
+</table>
+
+</div>
+
+<button name="wyslij" id="wyslij" type="submit" onClick="alercik()">Wyślij</button><button name="wyczysc" id="wyczysc" type="reset">Wyczyść</button>
+</form>
+
+<script>
+
+function alercik() {
+	if(document.getElementById("w1").checked) {alert("Zostałeś zakwalifikowany na koncert wykonawcy 1");}
+	else if(document.getElementById("w2").checked) {alert("Zostałeś zakwalifikowany na koncert wykonawcy 2");}
+	else if(document.getElementById("w3").checked) {alert("Zostałeś zakwalifikowany na koncert wykonawcy 3");}
+	else {alert("Wybierz wykonawcę!");}
+}
+
+</script>
+
+</body>
+</html>

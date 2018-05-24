@@ -1,0 +1,31 @@
+body
+{
+	background-color: lightblue;
+}
+
+form
+{
+	text-align: center;
+}
+
+table
+{
+	text-align: left;
+}
+
+#q1
+{
+	width: 50%;
+	float: left;
+}
+
+#q2
+{
+	width: 50%;
+	float: right;
+}
+
+#header
+{
+	float: top;
+}
